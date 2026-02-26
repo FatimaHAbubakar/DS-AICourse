@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shakespeare Generative AI Lab</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        h1, h2, h3 { color: #2c3e50; }
+        code { background-color: #f4f4f4; padding: 4px; }
+        .section { margin-bottom: 40px; }
+    </style>
+</head>
+<body>
+
+<h1>Shakespeare Generative AI Lab</h1>
+
+<div class="section">
+<h2>Problem Statement</h2>
+<p>
+Build a probabilistic bigram model trained on Romeo and Juliet
+to generate Shakespearean-style text and evaluate its statistical properties.
+</p>
+</div>
+
+<div class="section">
+<h2>Dataset</h2>
+<p>
+Source: Romeo and Juliet by William Shakespeare (Public Domain).
+Text was converted into CSV format with one line per row.
+</p>
+</div>
+
+<div class="section">
+<h2>Data Cleaning</h2>
+<ul>
+<li>Lowercased text</li>
+<li>Removed punctuation</li>
+<li>Tokenized into words</li>
+<li>Constructed continuous corpus</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Model</h2>
+<p>
+A Bigram Markov Model was trained using:
+</p>
+<p><code>P(next_word | current_word)</code></p>
+</div>
+
+<div class="section">
+<h2>Training Process</h2>
+<p>
+Word pairs were extracted and stored in a dictionary.
+Generation samples from learned transitions.
+</p>
+</div>
+
+<div class="section">
+<h2>Evaluation</h2>
+<ul>
+<li>Word frequency comparison</li>
+<li>Vocabulary size analysis</li>
+<li>Sentence length distribution</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Insights</h2>
+<p>
+The model captures short-term word relationships but lacks semantic understanding.
+Generated text reflects training distribution patterns.
+</p>
+</div>
+
+<div class="section">
+<h2>Limitations</h2>
+<p>
+Bigram models cannot capture long-term dependencies or reasoning.
+</p>
+</div>
+
+<div class="section">
+<h2>Conclusion</h2>
+<p>
+This lab demonstrates the statistical foundation of generative AI.
+</p>
+</div>
+
+</body>
+</html>
